@@ -4,7 +4,7 @@ class Calculator:
         pass
 
     def Sum(self, a, b):
-        return Addition.sum(a,b)
+        return Addition.Sum(a,b)
 
     def Subtraction(self, a, b):
         return Subtraction.difference(a,b)
