@@ -4,7 +4,9 @@ from MathOperations.addition import Addition
 from MathOperations.subtraction import Subtraction
 from MathOperations.multiplication import Multiplication
 from MathOperations.division import Division
+from MathOperations.squareroot import Squareroot
 from MathOperations.square import Square
+
 
 
 class MyTestCase(unittest.TestCase):
@@ -27,9 +29,18 @@ class MyTestCase(unittest.TestCase):
         multilist = [2, 2, 2]
         self.assertEqual(8, Multiplication.multiply(multilist))
 
+#    def test_MathOperations_divide_list(self):
+#        divList = [16,2]
+#        self.assertEqual(16, Division.divide(divList))
+
+    def test_MathOperations_squareroot_list(self):
+        sqrtList=[16]
+        self.assertEqual(4, Squareroot.squareroot(sqrtList))
+        
     def test_MathOperations_square_list(self):
-        sqList=[16]
+        sqList=[2]
         self.assertEqual(4, Square.square(sqList))
+
 
 if __name__ == '__main__':
     unittest.main()
