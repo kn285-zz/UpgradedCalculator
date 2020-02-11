@@ -2,6 +2,7 @@ import unittest
 
 from MathOperations.addition import Addition
 from MathOperations.subtraction import Subtraction
+from MathOperations.multiplication import Multiplication
 
 
 class MyTestCase(unittest.TestCase):
@@ -17,8 +18,12 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(6, Addition.sum(valuelist))
 
     def test_MathOperations_diff_list(self):
-        sublist = [8,4,2]
+        sublist = [8, 4, 2]
         self.assertEqual(2, Subtraction.difference(sublist))
+
+    def test_MathOperations_multi_list(self):
+        multilist = [2, 2, 2]
+        self.assertEqual(8, Multiplication.multiply(multilist))
 
 
 if __name__ == '__main__':
