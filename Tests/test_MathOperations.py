@@ -16,6 +16,10 @@ class MyTestCase(unittest.TestCase):
         valuelist = [1, 2, 3]
         self.assertEqual(6, Addition.sum(valuelist))
 
+    def test_MathOperations_diff_list(self):
+        sublist = [8,4,2]
+        self.assertEqual(2, Subtraction.difference(sublist))
+
 
 if __name__ == '__main__':
     unittest.main()
