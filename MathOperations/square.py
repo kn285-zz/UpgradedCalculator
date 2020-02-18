@@ -4,7 +4,7 @@ class Square:
     def square(base):
         if isinstance(base, list):
             return Square.squareList(base)
-        return base ** 0.5
+        return base * base
 
     @staticmethod
     def squareList(sqList):
