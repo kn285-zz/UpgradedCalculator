@@ -30,7 +30,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(8, Multiplication.multiply(multilist))
 
     def test_MathOperations_divide_list(self):
-        dividend = 8
+        dividend = 16
         divisor = 2
         result = Division.divide(dividend, divisor)
         self.assertEqual(8, result)
