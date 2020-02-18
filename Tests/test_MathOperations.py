@@ -33,7 +33,7 @@ class MyTestCase(unittest.TestCase):
         dividend = 8
         divisor = 2
         result = Division.divide(dividend, divisor)
-        self.assertEqual(8, result)
+        self.assertEqual(4, result)
 
     def test_MathOperations_squareroot_list(self):
         sqrtList=[16]
